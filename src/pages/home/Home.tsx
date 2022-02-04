@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     const[deadline, setDeadline] = useState<number>(0);
     const[todoList, setTodoList] = useState<ITask[]>([]);
 
-    const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    const handleChange = (e: any): void => {
         if(e.target.name === "task"){
             setTask(e.target.value);
         }else{
